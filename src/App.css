@@ -15,8 +15,8 @@ body {
  height: 150px;
  transform: translate(-50%, -50%);
  border-radius: 50%;
- background: #FAD233;
- box-shadow: 0 0 130px #FAD233;
+ background: #DBE6E0;
+ box-shadow: 0 0 50px rgba(219, 230, 224, 1);
 }
 
 #moon {
