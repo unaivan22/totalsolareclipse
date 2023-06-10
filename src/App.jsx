@@ -19,9 +19,9 @@ function App() {
     var z = event.accelerationIncludingGravity.z;
 
 
-    var x1 = event.accelerationIncludingGravity.x * 100;
-    var y1 = event.accelerationIncludingGravity.y * 100;
-    var z1 = event.accelerationIncludingGravity.z * 100;
+    var x1 = event.accelerationIncludingGravity.x * 10;
+    var y1 = event.accelerationIncludingGravity.y * 10;
+    var z1 = event.accelerationIncludingGravity.z * 10;
 
     setX(x1);
     setY(y1);
