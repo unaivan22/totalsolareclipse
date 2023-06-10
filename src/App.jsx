@@ -8,7 +8,7 @@ function App() {
   const [y, setY] = useState("");
   const [z, setZ] = useState("");
   
-  const frame = document.getElementsByTagName("BODY");
+  const frame = document.getElementById("body");
   const dot = document.getElementById("moon");
 
   function handleMotionEvent(event) {
