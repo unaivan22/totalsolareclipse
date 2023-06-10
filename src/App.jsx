@@ -18,11 +18,21 @@ function App() {
     var y = event.accelerationIncludingGravity.y * 2;
     var z = event.accelerationIncludingGravity.z;
 
+
+    var x1 = event.accelerationIncludingGravity.x * 100;
+    var y1 = event.accelerationIncludingGravity.y * 100;
+    var z1 = event.accelerationIncludingGravity.z * 100;
+
+    setX(x1);
+    setY(y1);
+    setZ(z1);
+
+
     setX(x);
     setY(y);
     setZ(z);
 
-    frame.style.backgroundColor =`rgb(${x}, ${y}, ${z})`
+    frame.style.backgroundColor =`rgb(${x1}, ${y1}, ${z1})`
     dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
   }
 
