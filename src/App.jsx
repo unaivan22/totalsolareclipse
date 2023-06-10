@@ -4,24 +4,6 @@ import './App.css'
 
 function App() {
 
-  // const dot = document.getElementById("moon");
-  // const moveX = 40;
-  // const moveY = 0;
-  // const moveZ = 1;
-  
-  // const handleMotion = e => {
-  // const x = Math.round(e.accelerationIncludingGravity.x) * moveX;
-  // const y = Math.round(e.accelerationIncludingGravity.y) * moveY;
-  // const z = Math.round(e.accelerationIncludingGravity.z) * moveZ;
-  
-  // dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
-  
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener("devicemotion", handleMotion);
-  // });
-
   const [x, setX] = useState("");
   const [y, setY] = useState("");
   const [z, setZ] = useState("");
