@@ -19,20 +19,20 @@ function App() {
     var z = event.accelerationIncludingGravity.z;
 
 
-    var x1 = event.accelerationIncludingGravity.x * 1;
-    var y1 = event.accelerationIncludingGravity.y * 1;
-    var z1 = event.accelerationIncludingGravity.z * 1;
+    // var x1 = event.accelerationIncludingGravity.x * 1;
+    // var y1 = event.accelerationIncludingGravity.y * 1;
+    // var z1 = event.accelerationIncludingGravity.z * 1;
 
-    setX(x1);
-    setY(y1);
-    setZ(z1);
+    // setX(x1);
+    // setY(y1);
+    // setZ(z1);
 
 
     setX(x);
     setY(y);
     setZ(z);
 
-    frame.style.backgroundColor =`rgb(${x1}, ${y1}, ${z1})`
+    // frame.style.backgroundColor =`rgb(${x1}, ${y1}, ${z1})`
     dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
   }
 
