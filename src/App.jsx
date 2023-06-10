@@ -7,6 +7,8 @@ function App() {
   const [x, setX] = useState("");
   const [y, setY] = useState("");
   const [z, setZ] = useState("");
+  
+  const frame = document.getElementsByTagName("BODY");
   const dot = document.getElementById("moon");
 
   function handleMotionEvent(event) {
@@ -20,6 +22,7 @@ function App() {
     setY(y);
     setZ(z);
 
+    frame.style.backgroundColor =`rgb(${x}px, ${y}px, ${z}px)`
     dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
   }
 
