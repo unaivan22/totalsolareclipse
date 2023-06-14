@@ -32,7 +32,7 @@ function App() {
     setY(y);
     setZ(z);
 
-    frame.style.backgroundColor =`rgb(${x1}, ${y1}, ${z1})`
+    frame.style.background =`rgb(${x1}, ${y1}, ${z1})`
     dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
   }
 
