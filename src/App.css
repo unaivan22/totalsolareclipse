@@ -61,8 +61,79 @@ transition: all 1.5s;
 
 #body {
 transition: all 1s;
+margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at center, #999, #000);
+  overflow: hidden;
 }
 
 ul li, .text{
   color: white;
+}
+
+.group {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  animation: float 60s linear infinite;
+  animation-delay: -1s;
+  top: 0
+}
+.group.two {
+  left: -100%;
+}
+
+.cloud {
+  border-radius: 50%;
+  position: absolute;
+  top: -50vh;
+}
+.cloud.one {
+  width: 90%;
+  height: 10%;
+  filter: url(#filter-one);
+  box-shadow: 0 60vh 55px 20px rgba(220, 220, 200, 0.8);
+  left: 10%;
+}
+.cloud.two {
+  width: 40%;
+  height: 20%;
+  filter: url(#filter-two);
+  box-shadow: 0 80vh 60px 0px rgba(233, 233, 233, 0.8);
+  left: 50%;
+}
+.cloud.three {
+  width: 40%;
+  height: 10%;
+  filter: url(#filter-three);
+  box-shadow: 0 100vh 70px 20px rgba(255, 255, 255, 0.7);
+  left: 0%;
+}
+.cloud.four {
+  width: 70%;
+  height: 15%;
+  filter: url(#filter-four);
+  box-shadow: 0 130vh 80px 10px rgba(240, 240, 220, 0.8);
+  left: 50%;
+}
+
+svg {
+  position: absolute;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  1.67%, 98.33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }
