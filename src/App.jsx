@@ -27,8 +27,8 @@ function App() {
     // outputBg.textContent = `Bg: ${XColor}`;
 
     
-    dot.style.top = 50 + radius * Math.sin(angle) + "%";
-    dot.style.left = 50 + radius * Math.cos(angle) + "%";
+    dot.style.top = 50 + angle * Math.sin(angle) + "%";
+    dot.style.left = 50 + angle * Math.cos(angle) + "%";
     
     frame.style.background =`rgb(${XColor}, ${XColor}, ${XColor})`;
   }
