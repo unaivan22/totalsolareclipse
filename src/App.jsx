@@ -6,39 +6,37 @@ function App() {
 
   const [x, setX] = useState("");
   const [y, setY] = useState("");
-  const [z, setZ] = useState("");
-  
-  const frame = document.getElementById("body");
-  const dot = document.getElementById("moon");
 
   function handleMotionEvent(event) {
-    console.log("handle motion event", event);
 
-    var x = event.accelerationIncludingGravity.x * 12;
-    var y = event.accelerationIncludingGravity.y * 2;
-    var z = event.accelerationIncludingGravity.z;
+    // var sun = document.getElementById("sun");
+    var moon = document.getElementById("moon");
+    const frame = document.getElementById("body");
 
 
-    var x1 = event.accelerationIncludingGravity.x * 1;
-    var y1 = event.accelerationIncludingGravity.y * 1;
-    var z1 = event.accelerationIncludingGravity.z * 1;
-
-    setX(x1);
-    setY(y1);
-    setZ(z1);
-
+    var x = event.accelerationIncludingGravity.x;
+    var y = event.accelerationIncludingGravity.y;
 
     setX(x);
     setY(y);
-    setZ(z);
 
-    frame.style.background =`rgb(${x1}, ${y1}, ${z1})`;
-    dot.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
+    var angle = Math.atan2(y, x);
+    var radius = Math.sqrt(x * x + y * y);
+    
+    outputElement.textContent = `Angle: ${angle.toFixed(2)} degrees, Radius: ${radius.toFixed(2)}`;
+
+    moon.style.top = 50 + radius * Math.sin(angle) + "%";
+    moon.style.left = 50 + radius * Math.cos(angle) + "%";
+    
+    var XColor = radius * 40;
+    outputBg.textContent = `Bg: ${XColor}`;
+      
+    frame.style.background =`rgb(${XColor}, ${XColor}, ${XColor})`;
   }
 
   useEffect(() => {
     window.addEventListener("devicemotion", handleMotionEvent, true);
-  }, [x, y, z]);
+  }, [x, y]);
 
 
 
@@ -48,6 +46,8 @@ function App() {
         <div id="moon">
         </div>
       </div>
+      <p id='output'></p>
+  <p id='bg'></p>
     </>
   )
 }
