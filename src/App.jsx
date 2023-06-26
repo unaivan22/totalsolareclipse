@@ -6,7 +6,7 @@ function App() {
 
   const [x, setX] = useState("");
   const [y, setY] = useState("");
-  var dot = document.getElementById("moon");
+  var moon = document.getElementById("moon");
   const frame = document.getElementById("body");
 
   function handleMotionEvent(event) {
@@ -27,8 +27,8 @@ function App() {
     // outputBg.textContent = `Bg: ${XColor}`;
 
     
-    dot.style.top = 50 + angle * Math.sin(angle) + "%";
-    dot.style.left = 50 + angle * Math.cos(angle) + "%";
+    moon.style.top = 0 + radius * 10 * Math.sin(angle.toFixed(2)) + "%";
+    moon.style.left = 0 + radius * 10 * Math.cos(angle.toFixed(2)) + "%";
     
     frame.style.background =`rgb(${XColor}, ${XColor}, ${XColor})`;
   }
