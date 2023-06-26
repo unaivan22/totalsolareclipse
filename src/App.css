@@ -43,6 +43,7 @@
   background: #F8DD80;
   border-radius: 50%;
 box-shadow: 0 0 50px rgba(219, 230, 224, 1);
+transform: translate(-50%, -50%);
 }
 
 #moon {
