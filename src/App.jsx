@@ -45,36 +45,36 @@ function App() {
         <div id="moon">
         </div>
       </div>
-      <div class="group one">
-  <div class="cloud one"></div>
-  <div class="cloud two"></div>
-  <div class="cloud three"></div>
-  <div class="cloud four"></div>
-</div>
-<div class="group two">
-  <div class="cloud one"></div>
-  <div class="cloud two"></div>
-  <div class="cloud three"></div>
-  <div class="cloud four"></div>
-</div>
-<svg width="0" height="0">
-  <filter id="filter-one">
-    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="2904"></feTurbulence>
-    <feDisplacementMap in="SourceGraphic" scale="170"></feDisplacementMap>
-  </filter>
-  <filter id="filter-two">
-    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="8822"></feTurbulence>
-    <feDisplacementMap in="SourceGraphic" scale="180"></feDisplacementMap>
-  </filter>
-  <filter id="filter-three">
-    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="7569"></feTurbulence>
-    <feDisplacementMap in="SourceGraphic" scale="170"></feDisplacementMap>
-  </filter>
-  <filter id="filter-four">
-    <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="8517"></feTurbulence>
-    <feDisplacementMap in="SourceGraphic" scale="100"></feDisplacementMap>
-  </filter>
-</svg>
+      <div className="group one">
+        <div className="cloud one"></div>
+        <div className="cloud two"></div>
+        <div className="cloud three"></div>
+        <div className="cloud four"></div>
+      </div>
+      <div className="group two">
+        <div className="cloud one"></div>
+        <div className="cloud two"></div>
+        <div className="cloud three"></div>
+        <div className="cloud four"></div>
+      </div>
+      <svg width="0" height="0">
+        <filter id="filter-one">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="2904"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="170"></feDisplacementMap>
+        </filter>
+        <filter id="filter-two">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="8822"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="180"></feDisplacementMap>
+        </filter>
+        <filter id="filter-three">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="7569"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="170"></feDisplacementMap>
+        </filter>
+        <filter id="filter-four">
+          <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="8517"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="100"></feDisplacementMap>
+        </filter>
+      </svg>
     </>
   )
 }
