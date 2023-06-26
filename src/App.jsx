@@ -13,8 +13,8 @@ function App() {
 
     // var sun = document.getElementById("sun");
 
-    var x = event.accelerationIncludingGravity.x * 12;
-    var y = event.accelerationIncludingGravity.y * 2;
+    var x = event.accelerationIncludingGravity.x;
+    var y = event.accelerationIncludingGravity.y;
 
     setX(x);
     setY(y);
