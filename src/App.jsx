@@ -58,6 +58,8 @@ function App() {
         <div className="cloud three"></div>
         <div className="cloud four"></div>
       </div>
+      <p>{XColor}</p>
+      <p>{AColor}</p>
       <svg width="0" height="0">
         <filter id="filter-one">
           <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="2904"></feTurbulence>
