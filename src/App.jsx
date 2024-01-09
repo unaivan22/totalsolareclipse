@@ -26,6 +26,14 @@ function App() {
     var GColor = radius * 100;
     var BColor = radius * 100;
 
+    if (GColor > 191) {
+      GColor = 191;
+    }
+
+    if (BColor > 255) {
+      BColor = 255;
+    }
+
     // outputElement.textContent = `Angle: ${angle.toFixed(2)} degrees, Radius: ${radius.toFixed(2)}`;
     // outputBg.textContent = `Bg: ${XColor}`;
 
