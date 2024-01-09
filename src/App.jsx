@@ -22,9 +22,9 @@ function App() {
     var angle = Math.atan2(y, x);
     var radius = Math.sqrt(x * x + y * y);
     var XColor = radius * 40;
-    var RColor = radius * 0;
-    var GColor = radius * 100;
-    var BColor = radius * 100;
+    var RColor = radius * 40;
+    var GColor = radius * 40;
+    var BColor = radius * 40;
 
     if (GColor > 206) {
       GColor = 206;
