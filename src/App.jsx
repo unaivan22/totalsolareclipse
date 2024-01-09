@@ -45,7 +45,7 @@ function App() {
     moon.style.top = 0 + radius * 10 * Math.sin(angle.toFixed(2)) + "%";
     moon.style.left = 0 + radius * 10 * Math.cos(angle.toFixed(2)) + "%";
     
-    frame.style.background =`rgb(${RColor}, ${GColor}, ${BColor})`;
+    frame.style.background =`rgb(${XColor}, ${XColor}, ${XColor})`;
   }
 
   useEffect(() => {
