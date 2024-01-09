@@ -26,12 +26,16 @@ function App() {
     var GColor = radius * 100;
     var BColor = radius * 100;
 
-    if (GColor > 191) {
-      GColor = 191;
+    if (RColor > 135) {
+      RColor = 135;
     }
 
-    if (BColor > 255) {
-      BColor = 255;
+    if (GColor > 206) {
+      GColor = 206;
+    }
+
+    if (BColor > 250) {
+      BColor = 250;
     }
 
     // outputElement.textContent = `Angle: ${angle.toFixed(2)} degrees, Radius: ${radius.toFixed(2)}`;
@@ -41,7 +45,7 @@ function App() {
     moon.style.top = 0 + radius * 10 * Math.sin(angle.toFixed(2)) + "%";
     moon.style.left = 0 + radius * 10 * Math.cos(angle.toFixed(2)) + "%";
     
-    frame.style.background =`rgb(${RColor}, ${GColor}, ${BColor})`;
+    frame.style.background =`rgb(${RColor}, ${GColor}, ${ queueMicrotask            })`;
   }
 
   useEffect(() => {
