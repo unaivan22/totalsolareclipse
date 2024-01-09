@@ -22,8 +22,9 @@ function App() {
     var angle = Math.atan2(y, x);
     var radius = Math.sqrt(x * x + y * y);
     var XColor = radius * 40;
-    var GColor = radius * 10;
-    var BColor = radius * 10;
+    var RColor = radius * 0;
+    var GColor = radius * 100;
+    var BColor = radius * 100;
 
     // outputElement.textContent = `Angle: ${angle.toFixed(2)} degrees, Radius: ${radius.toFixed(2)}`;
     // outputBg.textContent = `Bg: ${XColor}`;
@@ -32,7 +33,7 @@ function App() {
     moon.style.top = 0 + radius * 10 * Math.sin(angle.toFixed(2)) + "%";
     moon.style.left = 0 + radius * 10 * Math.cos(angle.toFixed(2)) + "%";
     
-    frame.style.background =`rgb(${XColor}, ${GColor}, ${BColor})`;
+    frame.style.background =`rgb(${RColor}, ${GColor}, ${BColor})`;
   }
 
   useEffect(() => {
