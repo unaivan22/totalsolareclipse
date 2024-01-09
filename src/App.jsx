@@ -23,8 +23,8 @@ function App() {
     var radius = Math.sqrt(x * x + y * y);
     var XColor = radius * 40;
     var RColor = radius * 0;
-    var GColor = radius * 100;
-    var BColor = radius * 100;
+    var GColor = radius * 2;
+    var BColor = radius * 2;
 
     if (RColor > 135) {
       RColor = 135;
