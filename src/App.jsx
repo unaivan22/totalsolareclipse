@@ -26,10 +26,6 @@ function App() {
     var GColor = radius * 100;
     var BColor = radius * 100;
 
-    if (RColor > 135) {
-      RColor = 135;
-    }
-
     if (GColor > 206) {
       GColor = 206;
     }
